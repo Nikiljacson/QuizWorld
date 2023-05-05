@@ -1,0 +1,175 @@
+
+.quiz{
+    margin-top: 30vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    height: 60vh;
+}
+
+.quiz-started{
+    margin-top:0vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    height: 100vh;
+    
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+}
+
+#Q_effect{
+    color: white;
+    position: relative;
+    animation-name: quiz;
+    animation-duration: 1s;
+}
+@keyframes quiz {
+    0%   {color:white; left:0px; top:-100%;}
+    25%  {color:white; left:0px; top:-40vh;}
+    50%  {color:white; left:0px; top:0px;}
+    75%  {color:white; left:0px; top:-20vh;}
+    100% {color:white; left:0px; top:0px;}
+  }
+
+
+
+#startBtn{
+    padding: 20px;
+    /* font-size: larger; */
+    width: 20vw;
+    background-image: linear-gradient(rgb(140, 0, 121), rgb(9, 0, 181));
+    border: none;
+    border-radius: 3px;
+    color: rgb(218, 218, 218);
+    font-weight: 800;
+}
+#startBtn:hover{
+    cursor: pointer;
+    background-image:  linear-gradient(rgb(255, 0, 221), rgb(13, 0, 255));
+}
+
+#q-no{
+    color: rgb(203, 0, 193);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Q_no{
+    color: white;
+    padding: 1%;
+}
+#question{
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+}
+#trueBtn,#falseBtn,#rstBtn{
+    padding: 20px;
+    /* font-size: larger; */
+    width: 20vw;
+    background-image: linear-gradient(rgb(140, 0, 121), rgb(9, 0, 181));
+    border: none;
+    border-radius: 3px;
+    color: rgb(218, 218, 218);
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: 800;
+}
+#trueBtn:hover , #falseBtn:hover , #rstBtn:hover{
+    cursor: pointer;
+    background-image:  linear-gradient(rgb(255, 0, 221), rgb(13, 0, 255));
+}
+#crtAnsCount{
+    color: rgb(203, 0, 193);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh;
+}
+#crtAns{
+    color: rgb(203, 0, 193);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh;
+}
+#crt_ans{
+    color: white;
+    padding-left: 10px;
+    margin: 2vh;
+}
+#score{
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh;
+}
+#score_got{
+    color: rgb(203, 0, 193);
+    margin: 2vh;
+}
+#poor{
+    color:red;
+    position: relative;
+    animation-name: poor;
+    animation-duration: 2s;
+}
+@keyframes poor {
+    0%   {color:white; left:0px; top:100vh; }
+    25%  {color:white; left:0px; top:0vh; }
+    50%  {color:white; left:0px; top:0vh; }
+    75%  {color:white; left:0px; top:0vh; }
+    100% {color:red; left:0px; top:0vh; }
+  }
+
+#average{
+    color:yellow;
+    position: relative;
+    animation-name: average;
+    animation-duration: 2s;
+}
+@keyframes average {
+    0%   {color:white; left:0px; top:100vh;}
+    25%  {color:white; left:0px; top:0vh;}
+    50%  {color:white; left:0px; top:0vh;}
+    75%  {color:white; left:0px; top:0vh;}
+    100% {color:yellow; left:0px; top:0vh;}
+  }
+
+#awesome{
+    color:rgb(0, 255, 221);
+    position: relative;
+    animation-name: awesome;
+    animation-duration: 2s;
+}
+@keyframes awesome {
+    0%   {color:white; left:0px; top:100vh;}
+    25%  {color:white; left:0px; top:0vh;}
+    50%  {color:white; left:0px; top:0vh;}
+    75%  {color:white; left:0px; top:0vh;}
+    100% {color:rgb(0, 255, 221); left:0px; top:0vh;}
+  }
+
+#fantastic{
+    color:green;
+    position: relative;
+    animation-name: fantastic;
+    animation-duration: 2s;
+}
+@keyframes fantastic {
+    0%   {color:white; left:0px; top:100vh; font-size: smaller;}
+    25%  {color:white; left:200px; top:0vh; font-size: small;}
+    50%  {color:white; left:-200px; top:0vh; font-size:medium;}
+    75%  {color:white; left:200px; top:0vh; font-size:large;}
+    100% {color:green; left:0px; top:0vh; font-size: larger;}
+  }
